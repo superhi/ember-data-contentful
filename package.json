@@ -24,7 +24,7 @@
   "bugs": "https://github.com/davidpett/ember-data-contentful/issues",
   "homepage": "http://davidpett.github.io/ember-data-contentful/",
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "^4.5 || 6.* || >= 7.* || 8 || 10 || 12"
   },
   "author": "David Pett",
   "license": "MIT",
