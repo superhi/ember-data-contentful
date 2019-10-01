@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 import config from 'ember-get-config';
-import fetch from 'fetch';
+import ajax from 'ember-fetch/ajax'
 
 export default DS.Adapter.extend({
   /**
@@ -185,7 +185,7 @@ export default DS.Adapter.extend({
       space
     } = this._getConfig();
 
-    return fetch(`https://${api}.contentful.com/spaces/${space}/${type}/${this._serializeQueryParams(data)}`, {
+    return ajax(`https://${api}.contentful.com/spaces/${space}/${type}/${this._serializeQueryParams(data)}`, {
       headers: {
         'Accept': 'application/json; charset=utf-8',
         'Authorization': `Bearer ${accessToken}`
