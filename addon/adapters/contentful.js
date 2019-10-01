@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 import config from 'ember-get-config';
-import fetch from 'fetch';
+import fetch from 'ember-fetch';
 
 export default DS.Adapter.extend({
   /**
